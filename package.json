@@ -1,0 +1,18 @@
+{
+  "name": "sass-import-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-css": "http-server ./import-as-css",
+    "start-scss": "http-server ./import-as-scss",
+    "build": "sass library/test.scss:library/test-compiled.css import-as-css/main.scss:import-as-css/main.css import-as-scss/main.scss:import-as-scss/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "0.12.3",
+    "sass": "1.26.10"
+  }
+}
